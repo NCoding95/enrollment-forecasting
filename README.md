@@ -49,7 +49,7 @@ enrollment-forecasting/
 │   └── philippines_enrollment.csv      # Dataset (see Data Source below)
 │
 ├── 📁 src/
-│   └── mini.py                         # Main analysis pipeline
+│   └── mini.ipynb                         # Main analysis pipeline
 │
 ├── 📁 outputs/
 │   ├── 01_enrollment_distribution.png  # Distribution visualization
