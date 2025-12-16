@@ -49,7 +49,7 @@ enrollment-forecasting/
 │   └── philippines_enrollment.csv      # Dataset (see Data Source below)
 │
 ├── 📁 src/
-│   └── mini.ipynb                         # Main analysis pipeline
+│   └── mini.ipynb                         # Main Jupyter Notebook analysis pipeline
 │
 ├── 📁 outputs/
 │   ├── 01_enrollment_distribution.png  # Distribution visualization
@@ -70,26 +70,31 @@ enrollment-forecasting/
 ## ⚙️ Installation
 
 ### Prerequisites
+- Anaconda or Miniconda
 - Python 3.8 or higher
-- pip package manager
 
-### Setup
+### Environment Setup
 
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/enrollment-forecasting.git
 cd enrollment-forecasting
 
-# Create virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
+# Create conda environment
+conda create -n enrollment-forecast python=3.8 -y
+conda activate enrollment-forecast
+```
+### Install Dependencies
+# Option 1: Using requirements.txt
+```bash
 pip install -r requirements.txt
+```
+# Option 2: Direct Conda installation (recommended)
+```bash
+conda install pandas numpy matplotlib seaborn scikit-learn jupyter openpyxl -y
 ```
 
 ### Requirements
-
 ```txt
 pandas>=1.5.0
 numpy>=1.23.0
@@ -105,12 +110,15 @@ openpyxl>=3.0.0
 ### Running the Analysis
 
 ```bash
-# Navigate to source directory
-cd src
-
-# Run the complete pipeline
-python mini.ipyynb
+conda activate enrollment-forecast
+jupyter notebook
 ```
+## Run the Pipeline
+1. Navigate to the src/ directory
+2. Open mini.ipynb
+3. Click Run All
+##⚠️ Do NOT attempt to run the notebook using python mini.ipynb.
+Jupyter notebooks must be executed interactively.
 
 ### Expected Output
 
