@@ -85,11 +85,11 @@ conda create -n enrollment-forecast python=3.8 -y
 conda activate enrollment-forecast
 ```
 ### Install Dependencies
-# Option 1: Using requirements.txt
+### Option 1: Using requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
-# Option 2: Direct Conda installation (recommended)
+### Option 2: Direct Conda installation (recommended)
 ```bash
 conda install pandas numpy matplotlib seaborn scikit-learn jupyter openpyxl -y
 ```
