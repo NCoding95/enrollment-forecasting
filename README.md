@@ -220,7 +220,7 @@ To replicate this study:
 
 ### Customization
 
-Modify these parameters in `mini.py` to experiment:
+Modify these parameters in `mini.ipynb` to experiment:
 
 ```python
 # Model hyperparameters
